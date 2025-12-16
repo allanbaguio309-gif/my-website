@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to my Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form class="login-form">
+            <img src="logo1.jpg  " alt="logo" class="logo">
+        <div class="form-heading">Login</div>
+        <div class="input-group">
+            <label class="label" 
+            for="email">Email</label>
+                <input
+                    required
+                    placeholder="Enter your name"
+                    name="email"
+                    id="email"
+                    type="email"
+                    />
+                </div>
+                <div class="input-group">
+                    <label class="label" 
+                    for="password">Password</label>
+                    <input
+                        required
+                        placeholder="Enter your password"
+                        name="password" 
+                        id="password"
+                        type="password"
+                        />
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="submit">
+                <a href="#" onclick="login()">Login</a>
+                </div>
+                <div class="signup-link">Don't have an 
+                    account?<a href="#">Sign up</a></div>
+                </form>
+
+                <script>
+function login() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if (email === "allanbaguio@gmail.com" && password === "allanbaguio200723") { 
+        window.location.href = "personal.html";
+    } else {
+        alert("INVALID ACCOUNT");
+    }
+}
+</script>
+</body>
+</html>
